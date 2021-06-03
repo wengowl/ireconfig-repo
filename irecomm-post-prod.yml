@@ -61,6 +61,6 @@ yunque:
 post:
   orgcode: 0010%
 
-log4j:
-  debug: true
-  rootLogger: DEBUG,D,E
+logging:
+  level:
+    root: info

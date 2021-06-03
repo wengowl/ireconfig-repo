@@ -59,3 +59,6 @@ calc:
   ktypes: 6,2
 #人员筛选，部门，二部
   orgcode: 0011%
+  #redis计算结果保存时间
+  redis：
+    timeout：2

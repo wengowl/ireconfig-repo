@@ -58,8 +58,9 @@ job:
 yunque:
   url: http://ip:port
 
-post:
-  orgcode: 0010%
+#人员筛选，部门，二部
+calc:
+  orgcode: 0010%,0011%
 logging:
   level:
     root: debug

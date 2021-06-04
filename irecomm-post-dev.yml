@@ -63,4 +63,4 @@ calc:
   orgcode: 0010%,0011%
 logging:
   level:
-    root: debug
+    root: info

@@ -50,7 +50,7 @@ swagger:
 job:
   quartz:
     trigger:
-      time: 00 */1 00 * * ?
+      time: 00 */1 * * * ?
 
 #质量问题案例是6,标准规范是2
 calc:

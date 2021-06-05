@@ -50,7 +50,7 @@ swagger:
 job:
   quartz:
     trigger:
-      time: 00 30 00 * * ?
+      time: 00 */1 00 * * ?
 
 #质量问题案例是6,标准规范是2
 calc:
@@ -58,4 +58,4 @@ calc:
   zhilianganli:
     ktype: 6
 #人员筛选，部门，二部
-  orgcode: 0010%
+  orgcode: 0010%,0011%

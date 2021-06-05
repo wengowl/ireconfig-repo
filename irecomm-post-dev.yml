@@ -58,6 +58,10 @@ job:
 yunque:
   url: http://ip:port
 
+#知识链接组装的url ip地址
+knowledge:
+  url: http://ip:port
+
 #人员筛选，部门，二部
 calc:
   orgcode: 0010%,0011%

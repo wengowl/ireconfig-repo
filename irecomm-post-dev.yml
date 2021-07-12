@@ -54,7 +54,7 @@ job:
     trigger:
       time: 00 */5 * * * ?
 
-
+#知识链接组装的url ip地址
 yunque:
   url: http://ip:port
 
@@ -70,7 +70,7 @@ logging:
     file: "irecomm-post-log.%d{yyyy-MM-dd}.log"
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
   path: "./logs"
-  file:
+  file: "irecomm-post-log.%d{yyyy-MM-dd}.log"
     max-history: 30
     max-size: 10MB
   level:

@@ -66,6 +66,6 @@ knowledge:
 calc:
   orgcode: 0010%,0011%
 logging:
-            path: "./logs"
-            level:
-              root: info
+  path: "./logs"
+  level:
+    root: info

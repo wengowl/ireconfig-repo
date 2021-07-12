@@ -62,3 +62,7 @@ calc:
   #redis计算结果保存时间
   redis:
     timeout: 2
+logging:
+  file: ./logs/irecomm-calc-log.log
+  level:
+    root: info

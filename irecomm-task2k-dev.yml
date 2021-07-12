@@ -60,3 +60,8 @@ calc:
 #知识链接地址的系统ip和端口
 knowledge:
   url: http://ip:port
+
+logging:
+  file: ./logs/irecomm-task2k-log.log
+  level:
+    root: info

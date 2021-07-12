@@ -63,3 +63,8 @@ calc:
 #用户自定义词典路径
 userdict:
   path: dicts/test.txt
+
+logging:
+  file: ./logs/irecomm-tag-log.log
+  level:
+    root: info

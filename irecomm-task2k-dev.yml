@@ -62,6 +62,12 @@ knowledge:
   url: http://ip:port
 
 logging:
-  file: ./logs/irecomm-task2k-log.log
+  pattern:
+    file: "irecomm-task2k-log.%d{yyyy-MM-dd}.log"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+  path: "./logs"
+    file:
+      max-history: 30
+      max-size: 10MB
   level:
     root: info

@@ -64,4 +64,4 @@ knowledge:
 logging:
   path: "./logs"
   level:
-    root: info
+    root: debug

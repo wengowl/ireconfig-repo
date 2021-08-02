@@ -51,15 +51,6 @@ swagger:
   enable: true
 
 
-#质量问题案例是6,标准规范是2
-calc:
-  ktypes: 6,2
-  #redis计算结果保存时间
-  redis:
-    timeout: 7
-#知识链接地址的系统ip和端口
-knowledge:
-  url: http://ip:port
 
 logging:
   path: "./logs"

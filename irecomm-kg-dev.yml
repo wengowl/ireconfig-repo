@@ -1,0 +1,73 @@
+server:
+  port: 8707
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8800/eureka
+  instance:
+    hostname: localhost
+
+
+spring:
+  application:
+    name: irecomm-kg
+  data:
+    solr:
+     # host: http://solr-server-navy:8983/solr
+     zk-host: hadoop-1,hadoop-2,hadoop-3:2181/solr
+
+# DataSource Config
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.0.50:1521/orcl
+    username: kgmp
+    password: kgmp
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+      stat-view-servlet: #访问监控网页的登录用户名和密码
+        login-username: druid
+        login-password: druid
+
+  redis: #redis 配置
+    host: 192.168.0.15 # Redis服务器地址
+    database: 0 # Redis数据库索引（默认为0）
+    port: 6379 # Redis服务器连接端口
+    password: # Redis服务器连接密码（默认为空）
+    jedis:
+      pool:
+        max-active: 8 # 连接池最大连接数（使用负值表示没有限制）
+        max-wait: -1ms # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-idle: 8 # 连接池中的最大空闲连接
+        min-idle: 0 # 连接池中的最小空闲连接
+    timeout: 3000ms # 连接超时时间（毫秒）
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+#solrURL配置
+solr:
+  collection: mtneo4j
+  serverUrl: http://192.168.0.17:8983/solr/mtneo4j
+  semanticsUrl: http://192.168.0.17:8983/solr/mtkgflysemantics
+  semanticsCollection: mtkgflysemantics
+  jbUrl: http://192.168.0.6:9999/nlpfly
+  keytag: 无
+  fields: factory,unit,evet_date,sl,mtkg_ncr_related,mtkg_ncr_professional,mtkg_ncr_nonconformity,mtkg_outagetype,mtkg_treat_plan,mtkg_disability_type,mtkg_operate_type,mtkg_qdr_daily,mtkg_event_effect,mtkg_er_contri_cause,mtkg_cr_repair,mtkg_plant_type,mtkg_work_order_type,mtkg_task_type,mtkg_speciality,mtkg_cc_repair
+
+docFile:
+
+
+swagger:
+  enable: true
+
+
+
+logging:
+  path: "./logs"
+  level:
+    root: info

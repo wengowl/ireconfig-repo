@@ -51,10 +51,10 @@ mybatis-plus:
 
 #solrURL配置
 solr:
-  collection: mtneo4j
-  serverUrl: http://192.168.0.17:8983/solr/mtneo4j
-  semanticsUrl: http://192.168.0.17:8983/solr/mtkgflysemantics
-  semanticsCollection: mtkgflysemantics
+  collection: kgneo4j
+  serverUrl: http://192.168.0.17:8983/solr/kgneo4j
+  semanticsUrl: http://192.168.0.17:8983/solr/kgflysemantics
+  semanticsCollection: kgflysemantics
   jbUrl: http://192.168.0.6:9999/nlpfly
   keytag: 无
   fields: factory,unit,evet_date,sl,mtkg_ncr_related,mtkg_ncr_professional,mtkg_ncr_nonconformity,mtkg_outagetype,mtkg_treat_plan,mtkg_disability_type,mtkg_operate_type,mtkg_qdr_daily,mtkg_event_effect,mtkg_er_contri_cause,mtkg_cr_repair,mtkg_plant_type,mtkg_work_order_type,mtkg_task_type,mtkg_speciality,mtkg_cc_repair

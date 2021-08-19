@@ -14,8 +14,8 @@ spring:
     name: irecomm-kg
   data:
     solr:
-     # host: http://solr-server-navy:8983/solr
-     zk-host: hadoop-1,hadoop-2,hadoop-3:2181/solr
+      host: http://solr-server-navy:8983/solr
+     #zk-host: hadoop-1,hadoop-2,hadoop-3:2181/solr
 
 # DataSource Config
   datasource:

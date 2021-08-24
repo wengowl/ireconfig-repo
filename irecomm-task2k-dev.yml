@@ -60,6 +60,10 @@ calc:
 #知识链接地址的系统ip和端口
 knowledge:
   url: http://ip:port
+#用户自定义词典路径
+userdict:
+  path: ./dicts/test.txt
+  stopwords: ./dicts/stopwords.txt
 
 logging:
   path: "./logs"
